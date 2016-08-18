@@ -28,6 +28,7 @@ setup(
     # long_description=open("README.txt").read() or just """ lots of text here too""",
     # Dependent packages (distributions)
     dependency_links=[
+        "git+http://github.com/abusaidm/pip_shim"
     ],
     install_requires=[
     ],
