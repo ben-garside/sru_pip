@@ -28,8 +28,9 @@ setup(
     # long_description=open("README.txt").read() or just """ lots of text here too""",
     # Dependent packages (distributions)
     dependency_links=[
-        "git+http://github.com/abusaidm/pip_shim"
+        "https://github.com/abusaidm/pip_shim/tarball/master#egg=pip_shim-0.1.1"
     ],
     install_requires=[
+        "pip_shim==0.1.1"
     ],
 )

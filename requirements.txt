@@ -1,4 +1,1 @@
-git+https://github.com/abusaidm/iis_shim
-git+https://github.com/ben-garside/schtasks_shim
-aiohttp
-voluptuous
+https://github.com/abusaidm/pip_shim/tarball/master#egg=pip_shim-0.1.2
