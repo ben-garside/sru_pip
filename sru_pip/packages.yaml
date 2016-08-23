@@ -1,0 +1,50 @@
+---
+package:
+    label   : 'SRU PIP Package'
+    desc    : 'SRU Package for managing PIP'
+    version : '0.1.3'
+    methods :
+        get_all :
+            route   : /pip
+            label   : 'Show all modules'
+            desc    : 'List all the modules managed by PIP'
+            params  : ~
+        get_by_name:
+            route   : /pip
+            label   : 'Find modules by thier name'
+            desc    : 'Search for installed modules based on thier name, allws partial matching'
+            params  : 
+                name:
+                    type        : string
+                    label       : Name
+                    desc        : A name of the module to search for
+                    required    : true
+                    input_type  : text
+                partial:
+                    type        : boolean
+                    label       : Partial search
+                    desc        : Select if you would like to do a partial search
+                    required    : false
+                    input_type  : checkbox
+        install:
+            route   : /pip
+            label   : 'Install'
+            desc    : 'Install PIP module based on module name'
+            params  : 
+                name:
+                    type        : string
+                    label       : Name
+                    desc        : A name of the module to install
+                    required    : true
+                    input_type  : text
+        uninstall:
+            route   : /pip
+            label   : 'Uninstall'
+            desc    : 'Uninstall PIP module based on module name'
+            params  : 
+                name:
+                    type        : string
+                    label       : Name
+                    desc        : A name of the module to uninstall
+                    required    : true
+                    input_type  : text
